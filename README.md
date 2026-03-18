@@ -138,3 +138,66 @@ Because the system is built using **Physical Materials and Anim Notifies**, it i
 ## 🚀 Result
 
 When the Geometry Collection fractures during gameplay, a Blueprint actor is spawned automatically at the exact location where the break occurred. This simple system can be expanded to reveal pickups, collectibles, or gameplay objects whenever destructible items break in the environment.
+# Project 3 — Cloth Simulation Workflow (Blender → Unreal Engine 5)
+
+## 🖼️ Preview
+
+![Cloth Simulation](Media/3.gif)
+
+## 🧱 Features
+
+**Blender Cloth Mesh Setup**
+
+- Plane mesh created as base cloth surface
+  - Default cube removed
+  - Plane added via Shift + A → Mesh → Plane
+- High-density geometry prepared for simulation
+  - 40 loop cuts applied horizontally
+  - 40 loop cuts applied vertically
+  - Even topology ensures smooth bending and realistic cloth behavior
+- Mesh exported as FBX
+  - Clean export ready for Unreal import pipeline
+
+**Skeletal Mesh Import for Cloth System**
+
+- FBX imported into Unreal Engine as Skeletal Mesh
+  - Required for Chaos Cloth compatibility
+- Cloth mesh prepared for physics-based simulation
+  - Integrated with Unreal’s cloth workflow pipeline
+
+**Cloth Data Creation & Paint System**
+
+- Clothing Data asset generated from mesh section
+  - Linked to physics system for simulation
+- Cloth painting used to define simulation areas
+  - Full mesh painted white to enable complete cloth movement
+  - Non-simulated (pink) regions avoided for full dynamic behavior
+
+**Chaos Cloth Configuration**
+
+- Collision thickness adjusted
+  - Set to 12 to prevent clipping through surfaces
+- Cloth behavior tuned through ChaosClothConfig
+  - Improves realism and surface interaction
+
+**Physics & Environment Interaction**
+
+- Simulate Physics enabled on skeletal mesh
+  - Allows real-time cloth movement in scene
+- Environment collision activated
+  - Cloth interacts with external meshes (e.g., table)
+- Force Collision Update enabled
+  - Ensures consistent collision accuracy during motion
+  - Balanced with performance considerations
+
+**Material Application**
+
+- Custom texture applied to cloth mesh
+  - Tablecloth pattern imported as PNG
+  - Material assigned directly to skeletal mesh
+- Optional default material setup via asset details
+  - Ensures consistent appearance across instances
+
+## 🚀 Result
+
+A fully simulated, game-ready cloth system built in Blender and integrated into Unreal Engine 5 using Chaos Cloth, capable of dynamic interaction with environment objects and enhanced with custom materials for visual fidelity.
