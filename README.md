@@ -200,4 +200,77 @@ When the Geometry Collection fractures during gameplay, a Blueprint actor is spa
 
 ## 🚀 Result
 
-A fully simulated, game-ready cloth system built in Blender and integrated into Unreal Engine 5 using Chaos Cloth, capable of dynamic interaction with environment objects and enhanced with custom materials for visual fidelity.
+A fully simulated, game-ready cloth system built in Blender and integrated into Unreal Engine 5 using Chaos Cloth, capable of dynamic interaction with environment objects and enhanced with custom materials for visual fidelity. 
+
+# SCP-178 Glasses System
+
+## 🖼️ Preview
+
+![Project 4](Media/4.gif)
+
+## 🧱 Features
+
+**Post Process Visual Shift**
+
+- Post Process Volume configured with Infinite Extent (Unbound)
+- Blend Weight controlled dynamically for activation
+- Saturation reduced to near black for visual suppression
+- Gain adjusted to apply strong red tint for altered perception effect
+
+**Glasses Interaction System**
+
+- BP_Glasses actor created with static mesh component
+- BPI_Interact interface used for interaction handling
+- Line Trace system implemented from Camera Boom for detection
+- Interface validation ensures only interactable actors respond
+
+**Pickup & Attachment Logic**
+
+- Glasses attach to character using Glasses_Socket on head bone
+- Transform aligned using preview asset for accurate placement
+- Collision disabled on pickup to prevent physics conflicts
+- Attachment rules set to Snap to Target for clean positioning
+
+**Hidden Entity Setup (BP_178)**
+
+- Actor created with Skeletal Mesh (Manny) and animation blueprint
+- Actor Hidden In Game enabled by default
+- Collision set to Physics Actor for physical presence
+- Scaled for exaggerated visual impact
+
+**Entity Reveal System**
+
+- Post Process effect triggered on interaction
+- Delay used to control reveal timing
+- BP_178 referenced and validated at runtime
+- Actor visibility toggled off → on for reveal
+
+**Dynamic Spawn Positioning**
+
+- Entity positioned using player forward vector offset
+- Location calculated using Vector + Vector math
+- Z axis constrained to ground level for stability
+- Adjustable distance for gameplay tuning
+
+**Facing Rotation Logic**
+
+- Find Look At Rotation used for player-facing alignment
+- Rotation adjusted with Yaw offset for mesh correction
+- Applied using Set Actor Rotation for precise orientation
+
+**Death Sequence System**
+
+- Camera fade triggered via Player Camera Manager
+- Smooth fade from 0 → 1 alpha over defined duration
+- Scream audio played at entity location
+- Sequence node used to synchronize effects
+
+**Level Reset**
+
+- Delay matches fade/audio duration
+- Open Level node reloads current map
+- Creates immediate and final gameplay loop
+
+## 🚀 Result
+
+A clean, modular SCP-inspired system where interacting with a pair of glasses shifts the player's perception, revealing a hidden entity that triggers an unavoidable death sequence. Built as a strong foundation for expanding into horror mechanics, perception-based gameplay, or layered reality systems.
