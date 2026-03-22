@@ -275,7 +275,7 @@ A fully simulated, game-ready cloth system built in Blender and integrated into 
 
 A clean, modular SCP-inspired system where interacting with a pair of glasses shifts the player's perception, revealing a hidden entity that triggers an unavoidable death sequence. Built as a strong foundation for expanding into horror mechanics, perception-based gameplay, or layered reality systems.
 
-# Project 5 Decal System
+# Decal System
 
 ## 🖼️ Preview
 
