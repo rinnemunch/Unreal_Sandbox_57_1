@@ -274,3 +274,53 @@ A fully simulated, game-ready cloth system built in Blender and integrated into 
 ## 🚀 Result
 
 A clean, modular SCP-inspired system where interacting with a pair of glasses shifts the player's perception, revealing a hidden entity that triggers an unavoidable death sequence. Built as a strong foundation for expanding into horror mechanics, perception-based gameplay, or layered reality systems.
+
+# Project 5 Decal System
+
+## 🖼️ Preview
+
+![Project5](Media/5.gif)
+
+## 🧱 Features
+
+**Decal Texture Setup**
+
+- PNG image imported with transparency support
+- Clean alpha used for smooth edge blending
+- Texture prepared for projection without background artifacts
+
+**Material Configuration**
+
+- Material created using M_Decal naming convention
+- Material Domain set to Deferred Decal
+- Blend Mode set to TranslucentGreyTransmittance
+- Texture RGB connected to Base Color
+- Alpha channel connected to Opacity Override
+- Texture sample converted to parameter (Decal_Base)
+
+**Material Instance Workflow**
+
+- Material Instance created for flexible reuse
+- Texture parameter exposed for quick swapping
+- Multiple decals supported without duplicating materials
+
+**Decal Placement System**
+
+- Material Instance dragged into level to create decal actor
+- Transform tools used for positioning and alignment
+- Decal projection adjusted to fit surface correctly
+
+**Character Decal Control**
+
+- Disabled Receives Decals on ThirdPersonCharacter mesh
+- Prevents unintended projection onto player character
+
+**Dynamic Decal Swapping**
+
+- Texture parameter overridden inside Material Instance
+- New decal images applied instantly without rebuilding setup
+- Supports rapid iteration and variation
+
+## 🚀 Result
+
+A flexible decal system that allows fast projection of surface details like markings, damage, and stylized graphics without modifying base meshes or materials.
