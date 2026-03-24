@@ -275,7 +275,7 @@ A fully simulated, game-ready cloth system built in Blender and integrated into 
 
 A clean, modular SCP-inspired system where interacting with a pair of glasses shifts the player's perception, revealing a hidden entity that triggers an unavoidable death sequence. Built as a strong foundation for expanding into horror mechanics, perception-based gameplay, or layered reality systems.
 
-# Project 5 Decal System
+# Decal System
 
 ## 🖼️ Preview
 
@@ -323,6 +323,7 @@ A clean, modular SCP-inspired system where interacting with a pair of glasses sh
 
 ## 🚀 Result
 
+<<<<<<< HEAD
 A flexible decal system that allows fast projection of surface details like markings, damage, and stylized graphics without modifying base meshes or materials. 
 
 --- 
@@ -400,3 +401,6 @@ This project demonstrates three distinct approaches to Unreal Engine audio atten
 - Advanced binaural spatialization for immersive 3D audio
 
 Together, these systems showcase how sound can be shaped to feel grounded, reactive, and spatially accurate within a game world.
+=======
+A flexible decal system that allows fast projection of surface details like markings, damage, and stylized graphics without modifying base meshes or materials.
+>>>>>>> 55b5c6f563513e37388883ace692f338bd9f42c1
