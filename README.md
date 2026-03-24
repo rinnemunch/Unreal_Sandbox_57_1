@@ -1,4 +1,4 @@
-# 🧩 Unreal Engine Blueprint Showcase — Volume 8
+# 🧩 Unreal Engine Blueprint Showcase (Newer Version) - Volume 1
 
 A curated collection of **Unreal Engine 5.7.4** mini-projects — each one a focused, standalone system demonstrating clean, production-ready Blueprint design.
 This sandbox contains **Projects 1–6**, wrapped together as a complete learning pack.
