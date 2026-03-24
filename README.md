@@ -323,4 +323,80 @@ A clean, modular SCP-inspired system where interacting with a pair of glasses sh
 
 ## 🚀 Result
 
-A flexible decal system that allows fast projection of surface details like markings, damage, and stylized graphics without modifying base meshes or materials.
+A flexible decal system that allows fast projection of surface details like markings, damage, and stylized graphics without modifying base meshes or materials. 
+
+--- 
+
+# Project 6: Audio Attenuation System
+
+## 🖼️ Preview
+
+![Project6](Media/6.gif)
+
+## 🧱 Features
+
+**BP_Lightbulb — Basic Attenuation**
+
+- Point Light added as visual sound source reference
+  - Color adjusted for visibility
+- Audio Component configured
+  - Looping enabled for continuous playback
+  - Auto Activate enabled for immediate playback
+- Sound Attenuation (SA_Sound1)
+  - Inner Radius set to 250
+  - Falloff Distance set to 600
+  - Sphere shape used for even sound distribution
+  - Volume Attenuation enabled
+  - Spatialization enabled using Panning
+- Result
+  - Clear transition between full volume and falloff range
+  - Sound fades naturally based on player distance
+
+---
+
+**BP_Wind — Air Absorption System**
+
+- Text Render component added for in-world labeling ("Wind")
+- Audio Component configured with looping wind sound
+- Sound Attenuation (SA_Sound2)
+  - Inner Radius set to 500
+  - Falloff Distance set to 1400
+- Air Absorption enabled
+  - Min Distance Range set to 300
+  - Max Distance Range set to 1500
+  - Low Pass Cutoff Frequency Min set to 20000
+  - Low Pass Cutoff Frequency Max set to 5000
+- Result
+  - Sound not only fades with distance but becomes muffled
+  - High frequencies are reduced over distance for realism
+  - Creates a more natural “traveling through space” effect
+
+---
+
+**BP_Voices — Binaural Spatialization**
+
+- Static or Skeletal Mesh added to represent sound origin
+- Audio Component configured with looping voice/whisper audio
+- Sound Attenuation (SA_Sound3)
+  - Inner Radius set to 100
+  - Falloff Distance set to 300
+- Spatialization upgraded to Plugin-Spatialized (Binaural)
+  - Binaural Radius set to 200
+  - Non-Spatialized Radius Start set to 0
+  - Non-Spatialized Radius End set to 100
+- Result
+  - Highly directional and immersive sound behavior
+  - Sound shifts naturally as player rotates
+  - Enhanced realism when using headphones
+
+---
+
+## 🚀 Result
+
+This project demonstrates three distinct approaches to Unreal Engine audio attenuation:
+
+- Basic distance-based volume control
+- Frequency-based air absorption over distance
+- Advanced binaural spatialization for immersive 3D audio
+
+Together, these systems showcase how sound can be shaped to feel grounded, reactive, and spatially accurate within a game world.
