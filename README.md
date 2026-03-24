@@ -1,4 +1,22 @@
-# UE5 Footstep Sounds Using Physical Materials
+# 🧩 Unreal Engine Blueprint Showcase — Volume 8
+
+A curated collection of **Unreal Engine 5.7.4** mini-projects — each one a focused, standalone system demonstrating clean, production-ready Blueprint design.
+This sandbox contains **Projects 1–6**, wrapped together as a complete learning pack.
+Each system is lightweight, modular, and built to scale into full gameplay features.
+
+---
+
+## 🎞️ Project Gallery
+
+![Project Showcase](Media/all.gif)
+
+Explore the projects below 👇
+Each entry includes a **Blueprint workflow**, **GIF preview**, and **feature breakdown** — perfect for learning, prototyping, or integrating directly into your own UE projects.
+
+---
+
+
+# Project 1: UE5 Footstep Sounds Using Physical Materials
 
 ## 🖼️ Preview
 
@@ -73,7 +91,9 @@ The finished system dynamically detects the surface the player is walking on and
 
 Because the system is built using **Physical Materials and Anim Notifies**, it is fully scalable. Additional surfaces, sounds, or effects like **particles, decals, or footprints** can be added without changing the core system, making it a flexible foundation for more advanced audio and gameplay interactions. 
 
-# Spawn Items From Breakable Objects
+---
+
+# Project 2: Spawn Items From Breakable Objects
 
 ## 🖼️ Preview
 
@@ -138,6 +158,9 @@ Because the system is built using **Physical Materials and Anim Notifies**, it i
 ## 🚀 Result
 
 When the Geometry Collection fractures during gameplay, a Blueprint actor is spawned automatically at the exact location where the break occurred. This simple system can be expanded to reveal pickups, collectibles, or gameplay objects whenever destructible items break in the environment.
+
+---
+
 # Project 3 — Cloth Simulation Workflow (Blender → Unreal Engine 5)
 
 ## 🖼️ Preview
@@ -202,7 +225,9 @@ When the Geometry Collection fractures during gameplay, a Blueprint actor is spa
 
 A fully simulated, game-ready cloth system built in Blender and integrated into Unreal Engine 5 using Chaos Cloth, capable of dynamic interaction with environment objects and enhanced with custom materials for visual fidelity. 
 
-# SCP-178 Glasses System
+---
+
+# Project 4: SCP-178 Glasses System
 
 ## 🖼️ Preview
 
@@ -275,7 +300,9 @@ A fully simulated, game-ready cloth system built in Blender and integrated into 
 
 A clean, modular SCP-inspired system where interacting with a pair of glasses shifts the player's perception, revealing a hidden entity that triggers an unavoidable death sequence. Built as a strong foundation for expanding into horror mechanics, perception-based gameplay, or layered reality systems.
 
-# Decal System
+---
+
+# Project 5: Decal System
 
 ## 🖼️ Preview
 
